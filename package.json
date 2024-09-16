@@ -4,8 +4,12 @@
   "description": "Tailwind CSS e-Commerce Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./src/style.css -o ./public/css/style.css",
+    "watch": "tailwindcss -i ./src/style.css -o ./public/css/style.css --watch"
   },
   "author": "Subrata",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  }
 }
