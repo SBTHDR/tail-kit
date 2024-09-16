@@ -5,18 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./public/img/favicon-32x32.svg">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="./public/css/style.css">
     <title>Tail Kit.</title>
 </head>
 <body>
-    <div class="container h-20 bg-primary">
-        <h1 class="text-3xl font-bold text-center font-poppins">
-            Hello world!
-        </h1>
-        <h1 class="text-3xl font-bold text-center font-roboto">
-            Tail Kit.
-        </h1>
-    </div>
+    <!-- Header Start -->
+    <header class="py-4 shadow-md bg-white">
+        <div class="container flex items-center justify-between">
+            <!-- logo -->
+            <div>
+                <a href="/">
+                    <h1 class="w-32">TailKit.</h1>
+                </a>
+            </div>
+            <!-- Search -->
+             <div class="flex w-full max-w-xl relative">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>                    
+                </span>
+                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 rounded-l-lg focus:outline-none" placeholder="Search...">
+                <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+             </div>
+            <!-- Icons -->
+             <div class="flex items-center space-x-4">
+                <div>
+                    <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                        <div class="text-2xl">                                                    
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="text-xs leading-3">
+                            Wish List
+                        </div>
+                        <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">7</span>
+                    </a>
+                </div>
+                
+                <div>
+                    <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                        <div class="text-2xl">                                                    
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="text-xs leading-3">
+                            Cart
+                        </div>
+                        <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">7</span>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                        <div class="text-2xl">                        
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="text-xs leading-3">
+                            Account
+                        </div>                    
+                    </a>
+                </div>
+             </div>
+        </div>
+    </header>
+    <!-- Header End -->
 </body>
 </html>
