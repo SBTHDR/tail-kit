@@ -608,6 +608,10 @@ h1,h2,h3,h4,h5,h6{
   position: relative;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
 .-right-3{
   right: -0.75rem;
 }
@@ -636,9 +640,17 @@ h1,h2,h3,h4,h5,h6{
   top: 100%;
 }
 
+.top-\[50\%\]{
+  top: 50%;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .ml-2{
@@ -649,12 +661,12 @@ h1,h2,h3,h4,h5,h6{
   margin-left: 1.5rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
-}
-
 .mt-12{
   margin-top: 3rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .flex{
@@ -665,12 +677,20 @@ h1,h2,h3,h4,h5,h6{
   display: grid;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-5{
   height: 1.25rem;
 }
 
-.h-12{
-  height: 3rem;
+.w-10\/12{
+  width: 83.333333%;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-32{
@@ -683,14 +703,6 @@ h1,h2,h3,h4,h5,h6{
 
 .w-full{
   width: 100%;
-}
-
-.w-10\/12{
-  width: 83.333333%;
-}
-
-.w-12{
-  width: 3rem;
 }
 
 .max-w-xl{
@@ -713,6 +725,10 @@ h1,h2,h3,h4,h5,h6{
   align-items: center;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -721,16 +737,16 @@ h1,h2,h3,h4,h5,h6{
   justify-content: space-between;
 }
 
-.gap-3{
-  gap: 0.75rem;
+.gap-5{
+  gap: 1.25rem;
 }
 
 .gap-6{
   gap: 1.5rem;
 }
 
-.gap-5{
-  gap: 1.25rem;
+.gap-3{
+  gap: 0.75rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -758,6 +774,10 @@ h1,h2,h3,h4,h5,h6{
 .divide-gray-300 > :not([hidden]) ~ :not([hidden]){
   --tw-divide-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-divide-opacity));
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-full{
@@ -810,6 +830,15 @@ h1,h2,h3,h4,h5,h6{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-40{
+  --tw-bg-opacity: 0.4;
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -827,11 +856,6 @@ h1,h2,h3,h4,h5,h6{
      object-fit: contain;
 }
 
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -840,6 +864,11 @@ h1,h2,h3,h4,h5,h6{
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-3{
@@ -852,39 +881,9 @@ h1,h2,h3,h4,h5,h6{
   padding-bottom: 1rem;
 }
 
-.py-36{
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
-.py-72{
-  padding-top: 18rem;
-  padding-bottom: 18rem;
-}
-
-.py-96{
-  padding-top: 24rem;
-  padding-bottom: 24rem;
-}
-
-.py-64{
-  padding-top: 16rem;
-  padding-bottom: 16rem;
-}
-
-.py-48{
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-}
-
 .py-44{
   padding-top: 11rem;
   padding-bottom: 11rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .py-6{
@@ -905,6 +904,11 @@ h1,h2,h3,h4,h5,h6{
   line-height: 2rem;
 }
 
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -920,13 +924,22 @@ h1,h2,h3,h4,h5,h6{
   line-height: 1rem;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-medium{
   font-weight: 500;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .capitalize{
@@ -947,6 +960,11 @@ h1,h2,h3,h4,h5,h6{
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -957,19 +975,14 @@ h1,h2,h3,h4,h5,h6{
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-gray-800{
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.text-gray-500{
+.text-white{
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -1020,6 +1033,10 @@ h1,h2,h3,h4,h5,h6{
 
 .group:hover .group-hover\:visible{
   visibility: visible;
+}
+
+.group:hover .group-hover\:bg-opacity-60{
+  --tw-bg-opacity: 0.6;
 }
 
 .group:hover .group-hover\:opacity-100{
